@@ -31,6 +31,7 @@ function setup() {
 
 function draw() {
   background(0);
+
   let spectrum = fft.analyze();
   //console.log(spectrum);
 
@@ -59,5 +60,16 @@ function draw() {
   //   line(0, 0, x, y);
  
   // }
+
+  //show UX text depending whether track is playing or not
+  if (song.isPlaying()) {
+    textSize(28);
+    text('click to Pause', mouseX, mouseY);
+    fill(0, 102, 153);
+  } else {
+    textSize(28);
+    text('click to Play', mouseX, mouseY);
+    fill(0, 102, 153);
+  }
 
 }
