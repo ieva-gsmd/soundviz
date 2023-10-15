@@ -13,7 +13,7 @@ function togglePlay() {
 
 //load the audio before anything else
 function preload() {
-  song = loadSound('Andrea - TrackQY.wav');
+  song = loadSound('Andrea - TrackQY.mp3');
 }
 
 function setup() {
