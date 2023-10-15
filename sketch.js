@@ -1,6 +1,6 @@
 let song;
 let fft;
-let button;
+
 
 //function to allow playing audio
 function togglePlay() {
@@ -44,7 +44,7 @@ function draw() {
     rect(x, height, width / spectrum.length, h )
   }
 
-  // //circular visualiser
+  // //uncomment below for a circular visualiser
   // noStroke();
   // //put the visualiser in the middle
   // translate(width / 2, height / 2);
