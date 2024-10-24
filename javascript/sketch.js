@@ -5,7 +5,6 @@ let fft;
 function setup() {
   let cnv = createCanvas(windowWidth, windowHeight);
   cnv.mouseClicked(togglePlay); // Toggle play on canvas click
-  angleMode(DEGREES); // Set angle mode for circular visualization
 
   // Create a new player and connect it to the destination (speakers)
   player = new Tone.Player("./andrea.mp3").toDestination();
